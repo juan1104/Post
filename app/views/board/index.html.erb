@@ -1,0 +1,51 @@
+<html>
+<body>
+      <div class="head">
+      <center><h1 style="font-family:verdana";>th<br>ㅜ<br>ㅍ</h1></center>
+      </div>
+
+   <section class = "container">
+ 
+    <section class="main _form">
+
+     <form action="board/create">
+    
+    <div class="bamboo_input">
+        <input type="text" name="irum" size="99" placeholder="닉네임"><br>
+        <textarea name="naeyong" cols = "100" rows="10" placeholder="내용을 입력하세요."></textarea><br>
+    </div>
+    
+      <div class="bamboo_submit">
+        <input type="submit" size = "6">
+      </div>
+    
+      </form>
+  </section>
+ 
+
+
+
+
+    <section class="main_article">
+      <% @posts.each do |p| %>
+      <article class= "main_article2">
+     
+       <div class="article header">
+          <h5>th<br>ㅜ<br>ㅍ</h5>
+          <%= distance_of_time_in_words_to_now(p.created_at)%>
+       </div>
+      
+        <div class="article_main">
+           <h5> <%= p.id%>번째 울림<%=p.content %></h5>
+           <li><%=p.writer%> : <pre><%=p.content%></pre>
+           <a href="/board/edit?id=<%=p.id%>">edit</a>
+           <a href="/board/destroy?id=<%=p.id%>">delete</a>
+           </li>
+         </div>
+
+     </article>
+      <% end %>
+    </section>
+</section>
+</body>
+</html>

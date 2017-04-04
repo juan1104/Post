@@ -1,0 +1,81 @@
+// Place all the styles related to the board controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+.head{
+    text-align: center;
+    font-size: 30px;
+    font-family:"굴림체";
+    color: white;
+}
+
+
+body{
+    
+     background-color: rgb(190,146,126);
+     background-size: cover;
+}
+
+.container { 
+    background-image: url(http://blog.naver.com/moon_1547?Redirect=Log&logNo=220131316138);
+  width: 900px;
+  margin: 5% auto;
+}
+.bamboo_input{
+     border: 1px solid;
+     margin: 2px;
+    text-align: center;
+    width: 100%;
+     border-radius: 15px;
+    //  background-color: #FFFF7E;
+     border:none;
+}
+
+.main_article{
+    margin-top: 5%;
+    border: 1px, 1px, 1px, 1px solid;
+    border-color: #e5e6e9 #dfe0e4 #d0d1d5;
+    padding: 10px;
+    border-radius: 15px;
+    background-color: rgb(52,67,25);
+}
+* {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+.main_article2{
+  margin-top: 5%;
+  border: 1px solid;
+  border-color: #e5e6e9 #dfe0e4 #d0d1d5;
+  padding: 10px;
+  border-radius: 15px;
+  background-color: rgb(244,241,196);
+  box-shadow: 10px;
+}
+.main_form{
+    width: 100%;
+     border: 1px, 1px, 1px, 1px solid;
+     border: none;
+      border-radius: 15px;
+}
+ .bamboo_submit {
+    border-top: 3px solid #d0d1d5;
+    padding: 10px;
+  }
+  input[type='submit'] {
+    border: none;
+    background-color: #d4fc79;
+    color: rgba(gray, 0.8);
+    font-size: 30px;
+    padding: 3px 10px;
+    float: right;
+  }
+  
+input[type='text'], textarea {
+ width: 100%;
+ border: none;
+ background: #FFF;
+ margin: 0 0 5px;
+ padding: 10px;
+}
